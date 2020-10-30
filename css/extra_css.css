@@ -1,0 +1,306 @@
+*{
+  transition: all 1s ease;
+}
+.img_box_w_cap{
+  text-align: center;
+  margin: 15px;
+}
+.h5, h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+p i{
+  font-family: Timesnewroman;
+}
+.btn{
+  background:#677d93;
+  color:white;
+}
+.download_button{
+  margin:5px 10px;
+  clear: both;
+}
+.text_panel{
+  background: rgba(236, 236, 236, 0.8);
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: 25px 0px;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.current_item{
+    color: #fff !important;
+}
+.lead {
+  font-weight: bold;
+  font-size: 22px;
+}
+.fullsizeimage{
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  text-align: center;
+}
+
+.img_box_w_cap .fullsizeimage,
+.img_box_w_cap img{
+  width: auto;
+  min-width: 25%;
+  display: inline-block;
+  padding: 20px;
+  background: white;
+  border-radius: 40px;
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+.accordion_area{
+  width:100%;
+  padding: 10px 15px;
+}
+.accordion_area .accordion_item{
+  width:100%;
+  cursor: pointer;
+  margin:10px 0;
+}
+.accordion_area .accordion_item .accordion_main{
+  width: 100%;
+  background:rgba(0,0,0,0.3);
+  padding: 10px 15px;
+  position: relative;
+}
+.accordion_area .accordion_item .accordion_content{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.accordion_area .accordion_item .accordion_content.openaccordion{
+  height: auto;
+  padding: 10px 20px;
+}
+
+.profile_box{
+  text-align: center;
+  background:#d2d2d2;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: calc(25% - 10px);
+  float: left;
+  margin: 10px 5px;
+}
+.profile_box.main_profile{
+  width:100%;
+}
+.profile_box.main_profile .profile_pic{
+  width: 30%;
+}
+.profile_box .profile_pic{
+  display: inline-block;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  height: 300px;
+
+  border: 2px solid #343a40;
+
+  border-radius: 10px;
+}
+.profile_box .profile_pic img{
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: top;
+}
+.profile_box .profile_text{
+
+}
+.profile_box .profile_text p{
+
+}
+
+
+.navbar-dark .navbar-nav .active > .nav-link{
+  color: rgba(255,255,255,.5);
+}
+.active_menu_item{
+  color: white !important;
+}
+
+.chev_icon{
+  position: absolute;
+  right: 10px;
+  height: 60%;
+}
+.chev_icon.open_box{
+  transform: rotate(180deg);
+}
+.bg-image-full{
+  background-position: bottom;
+  background-size: contain;
+}
+
+.find_us_footer {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
+.find_us_footer .findus_person{
+  display: inline-block;
+  margin: 10px 15px;
+  color: white;
+}
+.set_header_image{
+  height: 300px;
+  background-position: center !important;
+}
+/* Responsive */
+@media(max-width:991px){
+  .profile_box{
+    width:calc(50% - 10px);
+  }
+  .set_header_image{
+    height: 150px;
+  }
+}
+@media(max-width:767px){
+  .profile_box{
+    width:calc(100% - 10px);
+  }
+}
+
+/* timeline */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* container-timeline around content */
+.container-timeline {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container-timeline to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container-timeline to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container-timeline (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container-timeline (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for container-timelines on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 0px 11px rgba(0,0,0,0.35);
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width container-timelines */
+  .container-timeline {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container-timeline::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right container-timelines behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
